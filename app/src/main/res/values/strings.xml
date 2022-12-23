@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">GeoGebra</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="id">Id:</string>
+    <string name="title">Title:</string>
+    <string name="author_name">Author Name:</string>
+    <string name="date_created">Date Created:</string>
+    <string name="date_modified">Date Modified:</string>
+    <string name="todo">TODO</string>
+    <string name="explanation">The application was ready within two days, but I had a problem with the Room library version.
+        Since I was unable to access the Object created through Room and I thought it was my fault in the code.
+        This problem persisted for 3 days.
+        Fortunately, after changing the version of the Room library from 2.4.2 to 2.4.3, the problem was resolved.
+        I also can use Cortoutines instead of Rxjava if you want to.
+        Also, I can change the code from Kotlin to Java if Kotlin is not used in your company.
+        I noticed that there are no restrictions in the task, so I tried to use the fastest one.
+        I look forward to your feedback</string>
+    <string name="challengens">Challengens</string>
+    <string name="info">Info</string>
+    <string name="goal">The goal of the test task is to implement a simple application which fetches and shows a few GeoGebra materials in a grid and can show its details in a separate view.</string>
+    <string name="technologie_tags">Technologie Tags:</string>
+    <string name="mvvm_android_jetpack_navigation_rxjava_retrofit_glide_dagger2_material_design_room">MVVM, Hilt with other Jetpack libraries, Navigation, RxJava, Retrofit, Glide, Material Design, Room</string>
+    <string name="details">Details</string>
+    <string name="home">Home</string>
+    <string name="challenges">Challenges</string>
+    <string name="hallenges">Challenges</string>
+</resources>

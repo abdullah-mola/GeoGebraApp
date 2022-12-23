@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav.xml"
+    app:startDestination="@id/fragment_splashscreen">
+    <fragment
+        android:id="@+id/geoGebraFragment"
+        android:name="abdullah.mola.geogebra.ui.GeoGebraFragment"
+        android:label="fragment_geo_gebra"
+        tools:layout="@layout/fragment_geo_gebra" >
+        <argument
+            android:name="title"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_geoGebraFragment_to_geoGebraDetailsFragment"
+            app:destination="@id/geoGebraDetailsFragment" />
+        <action
+            android:id="@+id/action_geoGebraFragment_to_challenhensFragment"
+            app:destination="@id/challenhensFragment" />
+        <action
+            android:id="@+id/action_geoGebraFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/geoGebraDetailsFragment"
+        android:name="abdullah.mola.geogebra.ui.GeoGebraDetailsFragment"
+        android:label="fragment_geo_gebra_details"
+        tools:layout="@layout/fragment_geo_gebra_details" >
+        <argument
+            android:name="title"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_geoGebraDetailsFragment_to_geoGebraFragment"
+            app:destination="@id/geoGebraFragment" />
+        <action
+            android:id="@+id/action_geoGebraDetailsFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_geoGebraDetailsFragment_to_challenhensFragment"
+            app:destination="@id/challenhensFragment" />
+        <action
+            android:id="@+id/action_geoGebraDetailsFragment_to_geoGebraFragment2"
+            app:destination="@id/geoGebraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_splashscreen"
+        android:name="abdullah.mola.geogebra.ui.SplashscreenFragment"
+        android:label="fragment_splashscreen"
+        tools:layout="@layout/fragment_splashscreen" >
+
+        <action
+            android:id="@+id/action_splashscreen2_to_geoGebraFragment"
+            app:destination="@id/geoGebraFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/challenhensFragment"
+        android:name="abdullah.mola.geogebra.ui.ChallengensFragment"
+        android:label="fragment_challenhens"
+        tools:layout="@layout/fragment_challenhens" >
+        <action
+            android:id="@+id/action_challenhensFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="abdullah.mola.geogebra.ui.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" >
+        <action
+            android:id="@+id/action_infoFragment_to_challenhensFragment"
+            app:destination="@id/challenhensFragment" />
+        <action
+            android:id="@+id/action_infoFragment_to_geoGebraFragment"
+            app:destination="@id/geoGebraFragment" />
+    </fragment>
+</navigation>
