@@ -27,12 +27,3 @@ To Contribute, follow the following steps
 * Create a different branch then
 
 * Create a pull request and wait for code to be revieewed and merged
-
-https://ibb.co/7xf7zZt
-https://ibb.co/L1hBXnX
-
-https://i.ibb.co/Xtk6rSr/Capture.jpg
-https://i.ibb.co/kV7Yyw2/2.jpg
-
-https://ibb.co/cLL3qjJ
-https://i.ibb.co/hff90Ss/image.jpg
