@@ -16,6 +16,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
+import android.app.AlertDialog
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
@@ -104,6 +105,19 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.geoGebra)
         return navController.navigateUp() || super.onSupportNavigateUp()
+    }
+        override fun onBackPressed() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle(getString(R.string.exit_dialog_title))
+        builder.setMessage(getString(R.string.exit_dialog_message))
+        builder.setPositiveButton(getString(R.string.option_yes)) { dialogInterface, _ ->
+            dialogInterface.dismiss()
+            super.onBackPressed()
+        }
+        builder.setNegativeButton(getString(R.string.option_no)) { dialogInterface, _ ->
+            dialogInterface.dismiss()
+        }
+        builder.show()
     }
 
 }
