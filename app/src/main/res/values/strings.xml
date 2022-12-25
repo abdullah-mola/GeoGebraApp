@@ -8,6 +8,10 @@
     <string name="date_created">Date Created:</string>
     <string name="date_modified">Date Modified:</string>
     <string name="todo">TODO</string>
+        <string name="exit_dialog_message">Are you sure want to exit?</string>
+    <string name="exit_dialog_title">Exit?</string>
+    <string name="option_yes">Yes</string>
+    <string name="option_no">No</string>
     <string name="explanation">The application was ready within two days, but I had a problem with the Room library version.
         Since I was unable to access the Object created through Room and I thought it was my fault in the code.
         This problem persisted for 3 days.
